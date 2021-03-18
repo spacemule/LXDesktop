@@ -38,3 +38,5 @@ lxc stop $1
 lxc config device remove $1 X0
 lxc config device remove $1 PASocket
 lxc config device remove $1 mygpu
+
+exit 0
