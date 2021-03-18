@@ -32,7 +32,7 @@ To get started, set up an LXD container with a desktop environment, e.g.:
 
 # Usage
 
-1. Place the lxdesktop-session.sh script in a location accessible to the user's account who will log in with it. For example, /opt/bin/lxdesktop-session.sh
+1. Place the lxdesktop-session.sh script in a location accessible to the user's account who will log in with it. For example, /opt/lxdesktop/bin/lxdesktop-session.sh
 2. Create an xsession file using sample.desktop as a template.
 3. Place that file in a directory that your display manager will see
 4. Logout and login choosing the new xsession
