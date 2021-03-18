@@ -8,6 +8,8 @@ He makes clear that his work is released with no licensing restrictions. Therefo
 
 See here for my main inspiration: https://blog.simos.info/running-x11-software-in-lxd-containers/
 
+I included a folder called "Inspiration." It's a collection of terrible little scripts I wrote for testing using nested X servers. Please don't use them as is, but take a look to see what you can do with similar ideas. They are not meant for full DEs; they are meant for launching applications within a container and displaying them on a nested X server. The clip ones can be mapped to keyboard shortcuts to share clipboards between servers. The others are for launching different types of nested X servers and were designed to run at session start. Once again, these were just scratch files and by no means ready for prime time.
+
 # Setup
 
 Make sure LXD is properly installed and configured. If your system uses firewalld, check the LXD documentation to ensure networking works smoothly. I initially got this working under Ubuntu 20.04, but I've since switched to OpenSUSE Leap 15.2 with LightDM as the display manager. The current configuration will be tested there. I haven't gotten around to it yet.
