@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Xfce Session
+Name[en_AU]=Xfce Session
+Name[en_GB]=Xfce Session
+Comment[en_AU]=Use this session to run Xfce as your desktop environment
+Comment[en_GB]=Use this session to run Xfce as your desktop environment
+#The following line is a sample. Change as needed
+Exec=/home/$USER/bin/lxdesktop-session.sh opensuse-leap opensuse startxfce4
+#The proper format for the Exec line
+#Exec=/location/to/lxdesktop-session.sh container-name username-in-container desktop-session
+Icon=
+Type=Application
+DesktopNames=XFCE on container
