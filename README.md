@@ -4,7 +4,7 @@ Scratchpad for running LXD containers as desktop straight from display manager
 # Notes
 A good deal of this project was inspired by information found on the blog https://blog.simos.info/
 
-He makes clear that his work is released with no licensing restrictions. Therefore anything derived from his work is free to be used, modified, shared, etc. according to his restrictions.
+He makes clear that his work is released with no licensing restrictions. Therefore anything derived from his work is free to be used, modified, shared, etc. according to his (lack of?) restrictions.
 
 See here for my main inspiration: https://blog.simos.info/running-x11-software-in-lxd-containers/
 
