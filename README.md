@@ -14,6 +14,8 @@ I included a folder called "Inspiration." It's a collection of terrible little s
 
 Make sure LXD is properly installed and configured. If your system uses firewalld, check the LXD documentation to ensure networking works smoothly. I initially got this working under Ubuntu 20.04, but I've since switched to OpenSUSE Leap 15.2 with LightDM as the display manager. The current configuration will be tested there. I haven't gotten around to it yet.
 
+I like to add `security.idmap.isolated = "true"` to my default lxd profile. It makes me feel safer, but with this level of access to real hardware, who knows!
+
 To get started, set up an LXD container with a desktop environment, e.g.:
 
 
