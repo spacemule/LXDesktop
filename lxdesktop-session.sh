@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#Because I'm lazy I'm using the following positional arguments in this script. I figure it's not much of an issue since the script is called by a hard-coded Xsession file
+# $1 -- name of container
+# $2 -- username within container
+# $3 -- command to run
+
 #Clean up DISPLAY variable. I'm no bash whiz, so there's probably a more elegant way to do this
 CLEAN_DISPLAY=${DISPLAY%%.*}
 CLEAN_DISPLAY=${CLEAN_DISPLAY:1} 
@@ -20,7 +25,7 @@ sleep 2
 lxc exec $1 -- sed -i "s/; enable-shm = yes/enable-shm = no/g" /etc/pulse/client.conf
 
 #Start the desktop. Needs unbuffer to keep display manager from killing X
-unbuffer lxc exec $1 -t -- sudo -u $2 --login env PULSE_SERVER=unix:/home/.pulse-native XDG_SESSION_TYPE=x11 DISPLAY=:0 $3 $4
+unbuffer lxc exec $1 -t -- sudo -u $2 --login env PULSE_SERVER=unix:/home/.pulse-native XDG_SESSION_TYPE=x11 DISPLAY=:0 $3
 
 #Examples of what this command can look like
 
