@@ -8,7 +8,7 @@ He makes clear that his work is released with no licensing restrictions. Therefo
 
 See here for my main inspiration: https://blog.simos.info/running-x11-software-in-lxd-containers/
 
-# Set-up Notes
+# Set-up
 
 Make sure LXD is properly installed and configured. If your system uses firewalld, check the LXD documentation to ensure networking works smoothly. I initially got this working under Ubuntu 20.04, but I've since switched to OpenSUSE Leap 15.2. The current configuration is tested there.
 
