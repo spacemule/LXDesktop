@@ -9,6 +9,9 @@
 CLEAN_DISPLAY=${DISPLAY%%.*}
 CLEAN_DISPLAY=${CLEAN_DISPLAY:1} 
 
+#Ensure container can speak to X. Might not be necessary
+xhost + SI:localuser:$(whoami)
+
 #Add Xserver to container
 lxc config device add $1 X0 proxy connect="unix:@/tmp/.X11-unix/X$CLEAN_DISPLAY" listen="unix:@/tmp/.X11-unix/X0" security.gid=$(id -g) security.uid=$(id -u) bind=container
 
@@ -38,5 +41,6 @@ lxc stop $1
 lxc config device remove $1 X0
 lxc config device remove $1 PASocket
 lxc config device remove $1 mygpu
+#No need to call xhost again since X is shut down at this point
 
 exit 0
