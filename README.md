@@ -38,7 +38,7 @@ To get started, set up an LXD container with a desktop environment, e.g.:
 
 1. Place the lxdesktop-session.sh script in a location accessible to the user's account who will log in with it. For example, /opt/lxdesktop/bin/lxdesktop-session.sh
 2. Create an xsession file using sample.desktop as a template.
-3. Place that file in a directory that your display manager will see
+3. Place that file in a directory that your display manager will see. Looks like the default is usually /usr/share/xsessions. Arch Wiki says it's fine to play around there, but I don't like messing with the /usr directory. Make a snapshot, or, if you know another option to get this seen by the display manager, let me know!
 4. Logout and login choosing the new xsession
 
 # Troubleshooting
