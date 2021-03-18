@@ -14,13 +14,13 @@ Make sure LXD is properly installed and configured. If your system uses firewall
 
 To get started, set up an LXD container with a desktop environment, e.g.:
 
-`
-lxc launch images:opensuse/15.2 leap-container
 
-lxc exec leap-container -- sudo --user opensuse --login
+`lxc launch images:opensuse/15.2 leap-container`
 
-sudo zypper install patterns-xfce-xfce
-`
+`lxc exec leap-container -- sudo --user opensuse --login`
+
+`sudo zypper install patterns-xfce-xfce`
+
 
 **I make no claims as to the security, stability, or worthiness of this software. If your house catches on fire and you end up homeless as a result of running my code, I accept no responsibility, but I wish you the best.**
 
