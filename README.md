@@ -10,7 +10,7 @@ See here for my main inspiration: https://blog.simos.info/running-x11-software-i
 
 # Setup
 
-Make sure LXD is properly installed and configured. If your system uses firewalld, check the LXD documentation to ensure networking works smoothly. I initially got this working under Ubuntu 20.04, but I've since switched to OpenSUSE Leap 15.2. The current configuration is tested there.
+Make sure LXD is properly installed and configured. If your system uses firewalld, check the LXD documentation to ensure networking works smoothly. I initially got this working under Ubuntu 20.04, but I've since switched to OpenSUSE Leap 15.2. The current configuration will be tested there. I haven't gotten around to it yet.
 
 To get started, set up an LXD container with a desktop environment, e.g.:
 
