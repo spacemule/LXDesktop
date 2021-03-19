@@ -41,6 +41,12 @@ To get started, set up an LXD container with a desktop environment, e.g.:
 3. Place that file in a directory that your display manager will see. Looks like the default is usually /usr/share/xsessions. Arch Wiki says it's fine to play around there, but I don't like messing with the /usr directory. Make a snapshot, or, if you know another option to get this seen by the display manager, let me know!
 4. Logout and login choosing the new xsession
 
+# Planned features
+
+* Make a script to manage/automate adding and removing sessions
+* Track available/enabled sessions
+* Automate setup of common container configs
+
 # Troubleshooting
 
 * Make sure your user is part of the lxd group
